@@ -37,7 +37,7 @@
 <body>
   <img id="city" src="http://www.franklinchristopherbrooks.com/images/NYC.jpg" alt="New York City skyline">
     <header id="top" class="">
-        <a href="/"><h1>Franklin Christopher Brooks</h1></a>
+        <a href="#top"><h1>Franklin Christopher Brooks</h1></a>
             <nav>
                 <a href="about">About</a>
                 <a href="education">Education</a>
@@ -47,20 +47,43 @@
             </nav>
     </header>
 
-
-    <div id="nyc" class="splash">
+    <div id="contact" class="jumbotron">
         <div class="container">
-            <h1 data-balloon-length="xlarge" data-balloon="This section uses a fixed background image of negative z-index to allow text to scroll over." data-balloon-pos="up">Franklin Christopher Brooks</h1>
-            <h2>Fledgling NYC Web Developer</h2>
-            <br>
-            <br>
-                <a class="btn" href="contact">Learn More</a>
-        </div>
-        <div id="arrow" data-balloon-length="large" data-balloon="CSS animation. Scroll down!" data-balloon-pos="left">
-            <a href="about">v</a>
+          <br>
+          <br>
+          <br>
+          <br>
+            <h1>Contact Me</h1>
         </div>
     </div>
-
+    <div id="form">
+        <br>
+        <br>
+        <p data-balloon-length="large" data-balloon="This form uses CSS for form styling" data-balloon-pos="bottom">Thank you for your interest! &nbsp;Please let me know your thoughts on this site, my coding progress so far, and possible next steps in my coding career!</p>
+        <br>
+        <div id="formbox" class="clear">
+            <form method="post" id="MyForm" class="form" action="http://www.franklinchristopherbrooks.com" enctype="multipart/form-data">
+                <div class="form"><label for="name">Name: <span class="required">*</span></label></div>
+                <div class="form"><input type="text" size="40" placeholder="Your name" /></div>
+                <div class="form"><label for="email">E-Mail Address: <span class="required">*</span></label></div>
+                <div class="form"><input type="text" size="40" placeholder="example@email.com"/></div>
+                <div class="form"><label for="subject">Subject: <span class="required">*</span></label></div>
+                <div class="form"><input type="text" size="40" placeholder="Subject" /></div>
+                <div class="form"><label for="message">Message: <span class="required">*</span></label></div>
+                <div class="form"><textarea rows="5" cols="42" name="MyTextArea"  placeholder="Your message here"></textarea></div>
+                <br>
+                <div class="form"><input type="hidden" value="send" name="MyForm">
+                <input type="hidden" value="Version: 3.30" />
+                <input type="hidden" value="en" name="language">
+                <input type="hidden" value="1" name="submitted">
+                <input type="submit" value="Submit" class="submit" /></div>
+                <br>
+            </form>
+        </div>
+        <a class="btn" href="#contact">Back to Top</a>
+        <br>
+        <br>
+    </div>
     <footer class="">
         <a href="mailto:fcb@franklinchristopherbrooks.com"><img src="http://www.franklinchristopherbrooks.com/images/mail-icon.png" alt="Email Icon" class="social-icon"></a>
         <a href="https://twitter.com/franklincbrooks"><img src="http://www.franklinchristopherbrooks.com/images/twitter-icon.png" alt="Twitter Logo" class="social-icon"></a>

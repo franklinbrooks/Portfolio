@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="http://www.franklinchristopherbrooks.com/images/favicon.ico">
+    <link rel="image_src" href="http://www.franklinchristopherbrooks.com/images/og-image.png">
+    <link type="text/plain" rel="author" href="http://www.franklinchristopherbrooks.com/"/>
+    <meta property="og:url" content="http://www.franklinchristopherbrooks.com/">
+    <meta property="og:title" content="Franklin Christopher Brooks | Web Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://www.franklinchristopherbrooks.com/images/og-image.png">
+    <meta name="author" content="Franklin Christopher Brooks">
+    <title>Franklin Christopher Brooks</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="http://www.franklinchristopherbrooks.com/style2.css">
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.js"></script>
+    <script type="text/javascript" src="http://www.franklinchristopherbrooks.com/script.js"></script>
+    <script>
+        function init() {
+            window.addEventListener('scroll', function(e){
+                var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                    shrinkOn = 100,
+                    header = document.querySelector("header");
+                if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+                }
+                else {
+                    if (classie.has(header,"smaller")) {
+                        classie.remove(header,"smaller");
+                    }
+                }
+            });
+        }
+        window.onload = init();
+    </script>
+</head>
+<body>
+  <img id="city" src="http://www.franklinchristopherbrooks.com/images/NYC.jpg" alt="New York City skyline">
+    <header id="top" class="">
+        <a href="#top"><h1>Franklin Christopher Brooks</h1></a>
+            <nav>
+                <a href="about">About</a>
+                <a href="education">Education</a>
+                <a href="employment">Employment</a>
+                <a href="skills">Skills</a>
+                <a href="contact">Contact</a>
+            </nav>
+    </header>
+
+    <div id="coding" class="jumbotro">
+        <div class="container">
+          <br>
+          <br>
+          <br>
+          <br>
+            <h1>Coding Experience</h1>
+        </div>
+    </div>
+    <div id="skills" class="">
+        <br>
+        <h2 data-balloon-length="medium" data-balloon="Let's have some fun with the cursor!" data-balloon-pos="bottom">Online Learning</h2>
+        <a href="http://www.codecademy.com">
+            <div class="col" id="code" data-content="CODECADEMY:
+           I completed Codecademy courses in CSS, HTML, JavaScript, and Git. Some of these have been deprecated since my completion of them several months ago.">
+                <img id="codecademy" src="http://www.franklinchristopherbrooks.com/images/codecademywhite.png" alt="Codeacademy.com logo" height=65>
+            </div>
+        </a>
+        <a href="http://www.lynda.com">
+          <div class="col" id="lyndadotcom" data-content="LYNDA.COM: I completed Lynda.com courses in CSS, CSS form styling, PHP, JavaScript, LAMP-stack Web Server Setup, JSON/AJAX, JQuery, and Ruby.">
+            <img id="lynda" src="http://www.franklinchristopherbrooks.com/images/lyndainvert.png" alt="Lynda.com logo" height=195>
+          </div>
+        </a>
+        <a href="http://www.learn.co">
+            <div class="col" id="flatiron" data-content="LEARN.CO: I completed Learn.co's now deprecated Web Development Fundamentals course.  This covered the basics of Command Line Interface (CLI) commands, Object-Oriented Programming via Ruby, and Git.">
+                <img id="learn" src="http://www.franklinchristopherbrooks.com/images/learn_logo.png" alt="Learn.co logo" height=90>
+            </div>
+        </a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>Languages</h2>
+        <table>
+            <tr>
+                <td>
+                    <div class="left" data-balloon-length="large" data-balloon="HTML table styled with CSS and animated onhover" data-balloon-pos="bottom">English (native)</div>
+                    <div class="right"><span title="Expert"  data-balloon-length="large" data-balloon="Asterisks transform and title ballon displays onhover" data-balloon-pos="down">*****</span></div>
+                </td>
+                <td>
+                    <div class="left" data-balloon-length="large" data-balloon="HTML table styled with CSS and animated onhover" data-balloon-pos="bottom">Spanish</div>
+                    <div class="right" data-balloon-length="large" data-balloon="Asterisks transform and title ballon displays onhover" data-balloon-pos="down"><span title="Proficient">  ***</span></div>
+                </td>
+            </tr>
+        </table>
+        <h2>Skills</h2>
+        <table>
+            <tr>
+                <td>
+                    <div class="left" data-balloon-length="large" data-balloon="HTML table styled with CSS and animated onhover" data-balloon-pos="top">HTML5</div>
+                    <div class="right"  data-balloon-length="large" data-balloon="Asterisks transform and title ballon displays onhover" data-balloon-pos="down"><span title="Proficient">  ***</span></div>
+                </td>
+                <td>
+                    <div class="left" data-balloon-length="large" data-balloon="HTML table styled with CSS and animated onhover" data-balloon-pos="top">Adobe Photoshop</div>
+                    <div class="right" data-balloon-length="large" data-balloon="Asterisks transform and title ballon displays onhover" data-balloon-pos="down"><span title="Journeyman">   **</span></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="left">CSS3</div>
+                    <div class="right"><span title="Proficient">  ***</span></div>
+                </td>
+                <td>
+                    <div class="left">JavaScript</div>
+                    <div class="right"><span title="Journeyman">   **</span></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="left">Git/GitHub</div>
+                    <div class="right"><span title="Novice">   *</span></div>
+                </td>
+                <td>
+                    <div class="left">Ruby</div>
+                    <div class="right"><span title="Journeyman">   **</span></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="left">WordPress</div>
+                    <div class="right"><span title="Novice">    *</span></div>
+                </td>
+                    <td>
+                    <div class="left">Windows</div>
+                    <div class="right"><span title="Good"> ****</span></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="left">PHP</div>
+                    <div class="right"><span title="Journeyman">   **</span></div>
+                </td>
+                <td>
+                    <div class="left">MacOS</div>
+                    <div class="right"><span title="Novice">    *</span></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="left">MySQL</div>
+                    <div class="right"><span title="Novice">    *</span></div>
+                </td>
+                <td>
+                    <div class="left">Apache</div>
+                    <div class="right"><span title="Novice">    *</span></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="left">JQuery</div>
+                    <div class="right"><span title="Novice">    *</span></div>
+                </td>
+                <td>
+                    <div class="left">JSON</div>
+                    <div class="right"><span title="Novice">    *</span></div>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <p>My goals for WDI study are specifically to enhance my back-end skills, which remain an opportunity.
+        <br>
+        Here's looking forward to being able to post a link here to my first Android or iOS app!</p>
+        <br>
+        <a class="btn" href="contact">Learn More</a>
+        <a class="btn" href="#coding">Back to Top</a><br><br>
+        <br>
+        <br>
+    </div>
+
+    <footer class="">
+        <a href="mailto:fcb@franklinchristopherbrooks.com"><img src="http://www.franklinchristopherbrooks.com/images/mail-icon.png" alt="Email Icon" class="social-icon"></a>
+        <a href="https://twitter.com/franklincbrooks"><img src="http://www.franklinchristopherbrooks.com/images/twitter-icon.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href="https://github.com/franklinbrooks"><img src="http://www.franklinchristopherbrooks.com/images/github-icon.png" alt="Github Logo" class="social-icon"></a>
+        <a href="https://www.linkedin.com/in/franklinchristopherbrooks/"><img src="http://www.franklinchristopherbrooks.com/images/linkedin-icon.png" alt="LinkedIn Logo" class="social-icon"></a>
+        <p data-balloon-length="medium" data-balloon="Copyright date rendered by JavaScript" data-balloon-pos="down">&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Franklin Christopher Brooks.</p>
+        <p>
+          <!--<a href="http://validator.w3.org/check?uri=referer"> -->
+        <img src="http://www.w3.org/Icons/valid-xhtml10-blue.png"
+              alt="Valid XHTML 1.0!"> <!-- </a> -->
+        </p>
+        <br>
+    </footer>
+
+</body>
+</html>

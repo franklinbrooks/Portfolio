@@ -13,7 +13,8 @@
     <title>Franklin Christopher Brooks</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="http://www.franklinchristopherbrooks.com/style2.css">
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.3.0/balloon.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.js"></script>
     <script type="text/javascript" src="http://www.franklinchristopherbrooks.com/script.js"></script>
     <script>
         function init() {
@@ -37,7 +38,7 @@
 <body>
   <img id="city" src="http://www.franklinchristopherbrooks.com/images/NYC.jpg" alt="New York City skyline">
     <header id="top" class="">
-        <a href="/"><h1>Franklin Christopher Brooks</h1></a>
+        <a href="#top"><h1>Franklin Christopher Brooks</h1></a>
             <nav>
                 <a href="about">About</a>
                 <a href="education">Education</a>
@@ -47,17 +48,74 @@
             </nav>
     </header>
 
-
-    <div id="nyc" class="splash">
+    <div id="thd" class="jumbotron">
         <div class="container">
-            <h1 data-balloon-length="xlarge" data-balloon="This section uses a fixed background image of negative z-index to allow text to scroll over." data-balloon-pos="up">Franklin Christopher Brooks</h1>
-            <h2>Fledgling NYC Web Developer</h2>
-            <br>
-            <br>
-                <a class="btn" href="contact">Learn More</a>
+          <br>
+          <br>
+          <br>
+          <br>
+            <h1>Employment</h1>
         </div>
-        <div id="arrow" data-balloon-length="large" data-balloon="CSS animation. Scroll down!" data-balloon-pos="left">
-            <a href="about">v</a>
+    </div>
+
+    <div id="work" class="container">
+    <br>
+        <h2  data-balloon-length="large" data-balloon="Buttons use JavaScript to show and collapse accordion" data-balloon-pos="down">Work Experience</h2>
+
+
+        <button class="accordion">The Home Depot<br>October 2008 – Present</button>
+        <div class="panel">
+            <p>Front End Supervisor<br>
+            <img src="http://franklinchristopherbrooks.com/images/google.png" alt="Google Maps location symbol" height=16>  Long Island City, NY
+            <br>
+            <br>
+            Responsible for interviewing for new hires, employee training,
+            <br>
+            and directly supervising 90+ employees</p>
+        </div>
+        <button class="accordion">New York City Department of Education
+        <br>
+        June 2005 – August 2006</button>
+        <div class="panel">
+            <p>Secondary English Teacher
+            <br>
+        <img src="http://franklinchristopherbrooks.com/images/google.png" alt="Google Maps location symbol" height=16>  New York City<br>
+        NYC Teaching Fellows Program
+        <br>
+        <br>
+        Taught middle-school English for the NYC public school system</p>
+        </div>
+        <button class="accordion">Tyler Rose d.b.a. Centro-Fly NYC
+        <br>
+        October 1999 – February 2002</button>
+        <div class="panel">
+            <p>Event Support Staff Supervisor<br>
+            <img src="http://franklinchristopherbrooks.com/images/google.png" alt="Google Maps location symbol" height=16>  New York City
+            <br>
+            <br>
+            Coordinated staffing and supervised operations at 2000 person capacity venue
+            </p>
+        </div>
+        <button class="accordion">Tower Records<br>October 1988 – August 1999</button>
+        <div class="panel">
+            <p>Retail Merchandise Buyer
+            <br>
+        Internal and external sales<br>
+        <img src="http://franklinchristopherbrooks.com/images/google.png" alt="Google Maps location symbol" height=16>  California and NYC
+        <br>
+        <br>
+        Managed a $1m/year retail inventory for international retail chain</p>
+        </div>
+        <br>
+        <div id="clearAccordion">
+            <p><small>* Lapses due to full-time academic study and extensive travel abroad</small></p>
+            <br>
+            <a class="btn" href="contact">Learn More</a>
+            <a class="btn" href="#thd">Back to Top</a>
+            <br>
+            <br>
+            <p>References available upon request</p>
+            <br>
         </div>
     </div>
 
@@ -75,4 +133,14 @@
         <br>
     </footer>
 </body>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+            for (i = 0; i < acc.length; i++) {
+                acc[i].onclick = function(){
+                    this.classList.toggle("active");
+                    this.nextElementSibling.classList.toggle("show");
+            }
+        }
+    </script>
 </html>
